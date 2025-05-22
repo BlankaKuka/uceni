@@ -6,6 +6,7 @@ select count(*) as celkový_pocet_radku,
 count(value) as pocet_cen
 from czechia_payroll cp ;
 
+-- z druhe tabulky si najdu co znamena hodnota 316 a pocitam jen radky kde jsou vyplnene hodnoty
 select count(*)
 from czechia_payroll cp 
 where value_type_code = 316
